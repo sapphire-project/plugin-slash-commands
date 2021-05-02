@@ -103,7 +103,7 @@
 	"bugs": {
 		"url": "https://github.com/sapphire/interactions/issues"
 	},
-	"homepage": "https://sapphire-community.github.io/interactions",
+	"homepage": "https://sapphiredev.github.io/interactions",
 	"commitlint": {
 		"extends": [
 			"@commitlint/config-conventional"
