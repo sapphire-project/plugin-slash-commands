@@ -8,7 +8,7 @@
 
 ## Reporting a Vulnerability
 
-If you find a vulnerability in @vladfrangu/plugin-slash-commands's codebase please report it immediately.
+If you find a vulnerability in @sapphire/interactions's codebase please report it immediately.
 If you deem the vulnerability exploitable by any users in any shape or form please join the Discord server at https://sapphirejs.dev/discord and let anyone with the "Developers" or "Collaborators" role know.
 In case the vulnerability is not exploitable by any users you are free to either:
 

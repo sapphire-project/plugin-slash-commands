@@ -1,5 +1,5 @@
 {
-	"name": "@vladfrangu/plugin-slash-commands",
+	"name": "@sapphire/interactions",
 	"version": "1.0.0-alpha.0",
 	"description": "Simple plugin for adding Slash Command support in your existing bot",
 	"main": "dist/index.js",
@@ -81,7 +81,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/vladfrangu/plugin-slash-commands.git"
+		"url": "git+https://github.com/sapphire/interactions.git"
 	},
 	"files": [
 		"dist",
@@ -101,9 +101,9 @@
 		"discordjs"
 	],
 	"bugs": {
-		"url": "https://github.com/vladfrangu/plugin-slash-commands/issues"
+		"url": "https://github.com/sapphire/interactions/issues"
 	},
-	"homepage": "https://vladfrangu.github.io/plugin-slash-commands",
+	"homepage": "https://sapphire-community.github.io/interactions",
 	"commitlint": {
 		"extends": [
 			"@commitlint/config-conventional"

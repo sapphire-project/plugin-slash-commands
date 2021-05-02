@@ -2,16 +2,14 @@
 
 <!-- ![Sapphire Logo](https://cdn.skyra.pw/gh-assets/sapphire.png) -->
 
-# @vladfrangu/plugin-slash-commands
+# @sapphire/interactions
 
 **Simple plugin for adding Slash Command support in your existing bot.**
 
-[![GitHub](https://img.shields.io/github/license/vladfrangu/plugin-slash-commands)](https://github.com/vladfrangu/plugin-slash-commands/blob/main/LICENSE.md)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/vladfrangu/plugin-slash-commands.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/vladfrangu/plugin-slash-commands/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/vladfrangu/plugin-slash-commands.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/vladfrangu/plugin-slash-commands/context:javascript)
-[![Coverage Status](https://coveralls.io/repos/github/vladfrangu/plugin-slash-commands/badge.svg?branch=main)](https://coveralls.io/github/vladfrangu/plugin-slash-commands?branch=main)
-[![npm](https://img.shields.io/npm/v/@vladfrangu/plugin-slash-commands?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@vladfrangu/plugin-slash-commands)
-[![Depfu](https://badges.depfu.com/badges/plugin-slash-commands/count.svg)](https://depfu.com/github/vladfrangu/plugin-slash-commands?project_id=plugin-slash-commands)
+[![GitHub](https://img.shields.io/github/license/sapphire/interactions)](https://github.com/sapphire/interactions/blob/main/LICENSE.md)
+[![codecov](https://codecov.io/gh/sapphire-community/interactions/branch/main/graph/badge.svg?token=pAvXhtqMu8)](https://codecov.io/gh/sapphire-community/interactions)
+[![npm](https://img.shields.io/npm/v/@sapphire/interactions?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@sapphire/interactions)
+[![Depfu](https://badges.depfu.com/badges/b7a32a808429b51ac55624f31f8a698d/overview.svg)](https://depfu.com/github/sapphire-community/interactions?project_id=23003)
 
 </div>
 
@@ -25,7 +23,7 @@
 ## Installation
 
 ```bash
-yarn add -D @vladfrangu/plugin-slash-commands
+yarn add -D @sapphire/interactions
 ```
 
 ## Usage
@@ -35,7 +33,7 @@ _First, register the plugin_
 > Note that at this time, we only support discord.js directly! You may use the classes directly if you want to.
 
 ```typescript
-import '@vladfrangu/plugin-slash-commands/register-discordjs';
+import '@sapphire/interactions/register-discordjs';
 ```
 
 _Usage with TypeScript_
@@ -47,7 +45,7 @@ import {
 	SlashCommandRunFunction,
 	SlashCommandInteraction,
 	SlashCommandArgs
-} from '@vladfrangu/plugin-slash-commands';
+} from '@sapphire/interactions';
 import { Args, Command } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 
@@ -69,7 +67,7 @@ export class UserCommand extends Command {
 _Usage with JavaScript_
 
 ```javascript
-const { SlashCommandBuilderFunction, SlashCommandBuilder, SlashCommandRunFunction } = require('@vladfrangu/plugin-slash-commands');
+const { SlashCommandBuilderFunction, SlashCommandBuilder, SlashCommandRunFunction } = require('@sapphire/interactions');
 const { Args, Command } = require('@sapphire/framework');
 
 exports.UserCommand = class extends Command {
@@ -89,7 +87,7 @@ exports.UserCommand = class extends Command {
 
 ## API Documentation
 
-For the full API documentation please refer to the TypeDoc generated [documentation](https://vladfrangu.github.io/plugin-slash-commands).
+For the full API documentation please refer to the TypeDoc generated [documentation](https://sapphiredev.github.io/interactions).
 
 ## Buy us some doughnuts
 
