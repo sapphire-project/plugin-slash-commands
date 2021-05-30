@@ -1,22 +1,22 @@
 import type { Awaited, Command, Precondition } from '@sapphire/framework';
 import type { APIInteraction, RESTPostAPIApplicationCommandsJSONBody } from 'discord-api-types/v8';
-import type { SlashCommandBuilder } from '../structures/builders/SlashCommandBuilder';
-import type { SlashCommandArgs } from '../structures/interactions/SlashCommandArgs';
-import type { SlashCommandContext, SlashCommandInteraction } from '../structures/interactions/SlashCommandInteraction';
+import type { SlashCommand } from '../structures/builders/SlashCommand';
+import type { SlashCommandArgs } from '../structures/interactions/commands/SlashCommandArgs';
+import type { SlashCommandContext, SlashCommandInteraction } from '../structures/interactions/commands/SlashCommandInteraction';
 
 /**
  * Represents the function that is called when building a new slash command (or updates an existing one)
  *
  * @example
  * ```typescript
- * [SlashCommandBuilderFunction]() {
+ * [SlashCommandBuilder]() {
  *    return new SlashCommandBuilder().setName(this.name).setDescription('Examples are hard, ok?');
  * }
  * ```
  *
  * @example
  * ```typescript
- * [SlashCommandBuilderFunction]() {
+ * [SlashCommandBuilder]() {
  *    return {
  * 		  name: 'raw',
  * 		  description: 'You can use this too!'
@@ -24,7 +24,7 @@ import type { SlashCommandContext, SlashCommandInteraction } from '../structures
  * }
  * ```
  */
-export const SlashCommandBuilderFunction = Symbol('SlashCommands.Builder');
+export const SlashCommandBuilder = Symbol('SlashCommands.Builder');
 
 /**
  * Represents the function that builds a new slash command (or updates an existing one)
@@ -33,14 +33,14 @@ export const SlashCommandBuilderFunction = Symbol('SlashCommands.Builder');
  *
  * @example
  * ```typescript
- * [SlashCommandBuilderFunction]() {
+ * [SlashCommandBuilder]() {
  *    return new SlashCommandBuilder().setName(this.name).setDescription('Examples are hard, ok?');
  * }
  * ```
  *
  * @example
  * ```typescript
- * [SlashCommandBuilderFunction]() {
+ * [SlashCommandBuilder]() {
  *    return {
  * 		  name: 'raw',
  * 		  description: 'You can use this too!'
@@ -48,8 +48,8 @@ export const SlashCommandBuilderFunction = Symbol('SlashCommands.Builder');
  * }
  * ```
  */
-export interface ISlashCommandBuilderFunction {
-	(): Awaited<SlashCommandBuilder | RESTPostAPIApplicationCommandsJSONBody>;
+export interface ISlashCommandBuilder {
+	(): Awaited<SlashCommand | RESTPostAPIApplicationCommandsJSONBody>;
 }
 
 /**
@@ -57,24 +57,24 @@ export interface ISlashCommandBuilderFunction {
  *
  * @example
  * ```typescript
- * [SlashCommandGuildOnlyFunction]() {
+ * [SlashCommandGuildOnly]() {
  *    return ['737141877803057244'];
  * }
  * ```
  */
-export const SlashCommandGuildOnlyFunction = Symbol('SlashCommand.GuildOnly');
+export const SlashCommandGuildOnly = Symbol('SlashCommand.GuildOnly');
 
 /**
  * Represents the function that is called when a slash command should be limited to some guild ids
  *
  * @example
  * ```typescript
- * [SlashCommandGuildOnlyFunction]() {
+ * [SlashCommandGuildOnly]() {
  *    return ['737141877803057244'];
  * }
  * ```
  */
-export interface ISlashCommandGuildOnlyFunction {
+export interface ISlashCommandGuildOnly {
 	(): Awaited<string[]>;
 }
 
@@ -83,24 +83,24 @@ export interface ISlashCommandGuildOnlyFunction {
  *
  * @example
  * ```typescript
- * [SlashCommandPreParseFunction](interaction: SlashCommandInteraction, rawData: APIInteraction, context: SlashCommandContext) {
+ * [SlashCommandPreParse](interaction: SlashCommandInteraction, rawData: APIInteraction, context: SlashCommandContext) {
  *    return new SlashCommandArgs(interaction, this, rawData, context);
  * }
  * ```
  */
-export const SlashCommandPreParseFunction = Symbol('SlashCommand.PreParse');
+export const SlashCommandPreParse = Symbol('SlashCommand.PreParse');
 
 /**
  * Represents the function that is called before a slash command gets ran, similar to Command#preParse
  *
  * @example
  * ```typescript
- * [SlashCommandPreParseFunction](interaction: SlashCommandInteraction, rawData: APIInteraction, context: SlashCommandContext) {
+ * [SlashCommandPreParse](interaction: SlashCommandInteraction, rawData: APIInteraction, context: SlashCommandContext) {
  *    return new SlashCommandArgs(interaction, this, rawData, context);
  * }
  * ```
  */
-export interface ISlashCommandPreParseFunction {
+export interface ISlashCommandPreParse {
 	(interaction: SlashCommandInteraction, rawData: APIInteraction, context: SlashCommandContext): Awaited<SlashCommandArgs>;
 }
 
@@ -109,24 +109,24 @@ export interface ISlashCommandPreParseFunction {
  *
  * @example
  * ```typescript
- * [SlashCommandRunFunction](interaction: SlashCommandInteraction) {
+ * [SlashCommandRun](interaction: SlashCommandInteraction) {
  * 	  return interaction.reply('Hello from slash commands!', { ephemeral: true });
  * }
  * ```
  */
-export const SlashCommandRunFunction = Symbol('SlashCommands.Run');
+export const SlashCommandRun = Symbol('SlashCommands.Run');
 
 /**
  * Represents the function that is called when a slash command interaction is received
  *
  * @example
  * ```typescript
- * [SlashCommandRunFunction](interaction: SlashCommandInteraction) {
+ * [SlashCommandRun](interaction: SlashCommandInteraction) {
  * 	  return interaction.reply('Hello from slash commands!', { ephemeral: true });
  * }
  * ```
  */
-export interface ISlashCommandRunFunction {
+export interface ISlashCommandRun {
 	(interaction: SlashCommandInteraction, args: SlashCommandArgs, context: SlashCommandContext): Awaited<unknown>;
 }
 
@@ -137,23 +137,23 @@ export interface ISlashCommandRunFunction {
  *
  * @example
  * ```typescript
- * [SlashCommandPreconditionRunFunction](interaction: SlashCommandInteraction, command: Command) {
+ * [SlashCommandPreconditionRun](interaction: SlashCommandInteraction, command: Command) {
  *    return interaction.author.id === '139836912335716352' ? this.ok() : this.error('No');
  * }
  * ```
  */
-export const SlashCommandPreconditionRunFunction = Symbol('SlashCommands.PreconditionRun');
+export const SlashCommandPreconditionRun = Symbol('SlashCommands.PreconditionRun');
 
 /**
  * Represents the function that is called in a precondition when a slash command interaction is received
  *
  * @example
  * ```typescript
- * [SlashCommandPreconditionRunFunction](interaction: SlashCommandInteraction, command: Command) {
+ * [SlashCommandPreconditionRun](interaction: SlashCommandInteraction, command: Command) {
  *    return interaction.author.id === '139836912335716352' ? this.ok() : this.error('No');
  * }
  * ```
  */
-export interface ISlashCommandPreconditionRunFunction {
+export interface ISlashCommandPreconditionRun {
 	(interaction: SlashCommandInteraction, command: Command, context: Precondition.Context): Precondition.Result;
 }

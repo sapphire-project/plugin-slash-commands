@@ -20,8 +20,8 @@ import {
 	Store,
 	UserError
 } from '@sapphire/framework';
-import { ISlashCommandPreconditionRunFunction, SlashCommandPreconditionRunFunction } from '../../utils/Symbols';
-import type { SlashCommandInteraction } from '../interactions/SlashCommandInteraction';
+import { ISlashCommandPreconditionRun, SlashCommandPreconditionRun } from '../../utils/Symbols';
+import type { SlashCommandInteraction } from '../interactions/commands/SlashCommandInteraction';
 
 // Extend `Command#preconditions` to have slash command support
 PreconditionContainerArray.prototype.slashCommandRun = function slashCommandRun(
@@ -44,7 +44,7 @@ PreconditionContainerSingle.prototype.slashCommandRun = function slashCommandRun
 ) {
 	const precondition = Store.injectedContext.stores.get('preconditions').get(this.name);
 	if (precondition) {
-		const slashCommandHandler = Reflect.get(precondition, SlashCommandPreconditionRunFunction) as ISlashCommandPreconditionRunFunction | null;
+		const slashCommandHandler = Reflect.get(precondition, SlashCommandPreconditionRun) as ISlashCommandPreconditionRun | null;
 
 		if (!slashCommandHandler) {
 			throw new TypeError(
@@ -58,8 +58,7 @@ PreconditionContainerSingle.prototype.slashCommandRun = function slashCommandRun
 };
 
 // Extend the `PreconditionRunCondition` conditions to support slash commands
-// eslint-disable-next-line prefer-destructuring, @typescript-eslint/dot-notation
-const conditions = PreconditionContainerArray['conditions'];
+const { conditions } = PreconditionContainerArray;
 
 // Extend `And` condition
 const originalAnd = conditions.get(PreconditionRunCondition.And)!;

@@ -1,6 +1,6 @@
 import { AsyncPreconditionResult, Command, ok, Precondition, PreconditionContext, PreconditionStore, Result, UserError } from '@sapphire/framework';
-import { ISlashCommandPreconditionRunFunction, SlashCommandPreconditionRunFunction } from '../../utils/Symbols';
-import type { SlashCommandInteraction } from '../interactions/SlashCommandInteraction';
+import { ISlashCommandPreconditionRun, SlashCommandPreconditionRun } from '../../utils/Symbols';
+import type { SlashCommandInteraction } from '../interactions/commands/SlashCommandInteraction';
 
 export function extendPreconditionStore(store: PreconditionStore) {
 	const originalConstructor = store.constructor as typeof PreconditionStore;
@@ -8,9 +8,7 @@ export function extendPreconditionStore(store: PreconditionStore) {
 	class SlashCommandPreconditionStore extends originalConstructor {
 		public async slashCommandRun(interaction: SlashCommandInteraction, command: Command, context: PreconditionContext = {}) {
 			for (const precondition of this['globalPreconditions'] as Precondition[]) {
-				const slashCommandHandler = Reflect.get(precondition, SlashCommandPreconditionRunFunction) as
-					| ISlashCommandPreconditionRunFunction
-					| undefined;
+				const slashCommandHandler = Reflect.get(precondition, SlashCommandPreconditionRun) as ISlashCommandPreconditionRun | undefined;
 
 				if (!slashCommandHandler) {
 					throw new TypeError(

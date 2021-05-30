@@ -1,7 +1,7 @@
 import { ApplicationCommandOptionType } from 'discord-api-types/v8';
 import { mix } from 'ts-mixer';
 import { validateMaxOptionsLength, validateRequiredParameters } from './Assertions';
-import type { ToJSON } from './SlashCommandBuilder';
+import type { ToJSON } from './SlashCommand';
 import { Shared__NameAndDescription, Shared__Options } from './SlashCommandOptions';
 
 /**

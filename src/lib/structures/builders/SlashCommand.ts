@@ -5,7 +5,7 @@ import { Shared__NameAndDescription, Shared__Options } from './SlashCommandOptio
 import { SlashCommandSubCommandBuilder, SlashCommandSubCommandGroupBuilder } from './SlashCommandSubCommands';
 
 @mix(Shared__Options, Shared__NameAndDescription)
-export class SlashCommandBuilder {
+export class SlashCommand {
 	protected name: string = undefined!;
 
 	protected description: string = undefined!;
@@ -85,7 +85,7 @@ export class SlashCommandBuilder {
 	// #endregion
 }
 
-export interface SlashCommandBuilder extends Shared__NameAndDescription, Shared__Options {}
+export interface SlashCommand extends Shared__NameAndDescription, Shared__Options {}
 
 export interface ToJSON {
 	toJSON(): APIApplicationCommandOption;

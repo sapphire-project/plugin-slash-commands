@@ -5,7 +5,7 @@ import { extendPreconditionStore } from './index';
 /**
  * @since 1.0.0
  */
-export class SlashCommandPlugin extends Plugin {
+export class InteractionsPlugin extends Plugin {
 	public static [postInitialization](this: SapphireClient) {
 		// Register our own events
 		this.stores.get('events').registerPath(join(__dirname, 'events'));
@@ -20,4 +20,4 @@ export class SlashCommandPlugin extends Plugin {
 	}
 }
 
-SapphireClient.plugins.registerPostInitializationHook(SlashCommandPlugin[postInitialization], 'SlashCommands.PostInitialization');
+SapphireClient.plugins.registerPostInitializationHook(InteractionsPlugin[postInitialization], 'Interactions.PostInitialization');

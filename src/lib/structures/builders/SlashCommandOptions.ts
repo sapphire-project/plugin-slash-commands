@@ -1,7 +1,7 @@
 import { APIApplicationCommandOptionChoice, ApplicationCommandOptionType } from 'discord-api-types/v8';
 import ow from 'ow';
 import { validateDescription, validateMaxChoicesLength, validateMaxOptionsLength, validateName } from './Assertions';
-import type { ToJSON } from './SlashCommandBuilder';
+import type { ToJSON } from './SlashCommand';
 
 // #region Mixins
 
