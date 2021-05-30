@@ -7,7 +7,7 @@ exports.SlashCommandPreconditionRun = exports.SlashCommandRun = exports.SlashCom
  * @example
  * ```typescript
  * [SlashCommandBuilder]() {
- *    return new SlashCommandBuilder().setName(this.name).setDescription('Examples are hard, ok?');
+ *    return new SlashCommand().setName(this.name).setDescription('Examples are hard, ok?');
  * }
  * ```
  *
@@ -23,7 +23,7 @@ exports.SlashCommandPreconditionRun = exports.SlashCommandRun = exports.SlashCom
  */
 exports.SlashCommandBuilder = Symbol('SlashCommands.Builder');
 /**
- * Represents the function that is called when a slash command should be limited to some guild IDs
+ * Represents the function that is called when a slash command should be limited to some guild ids
  *
  * @example
  * ```typescript

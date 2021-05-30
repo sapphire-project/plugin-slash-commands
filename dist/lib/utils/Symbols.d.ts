@@ -9,7 +9,7 @@ import type { SlashCommandContext, SlashCommandInteraction } from '../structures
  * @example
  * ```typescript
  * [SlashCommandBuilder]() {
- *    return new SlashCommandBuilder().setName(this.name).setDescription('Examples are hard, ok?');
+ *    return new SlashCommand().setName(this.name).setDescription('Examples are hard, ok?');
  * }
  * ```
  *
@@ -32,7 +32,7 @@ export declare const SlashCommandBuilder: unique symbol;
  * @example
  * ```typescript
  * [SlashCommandBuilder]() {
- *    return new SlashCommandBuilder().setName(this.name).setDescription('Examples are hard, ok?');
+ *    return new SlashCommand().setName(this.name).setDescription('Examples are hard, ok?');
  * }
  * ```
  *
@@ -50,7 +50,7 @@ export interface ISlashCommandBuilder {
     (): Awaited<SlashCommand | RESTPostAPIApplicationCommandsJSONBody>;
 }
 /**
- * Represents the function that is called when a slash command should be limited to some guild IDs
+ * Represents the function that is called when a slash command should be limited to some guild ids
  *
  * @example
  * ```typescript
