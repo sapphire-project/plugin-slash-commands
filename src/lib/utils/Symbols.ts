@@ -10,7 +10,7 @@ import type { SlashCommandContext, SlashCommandInteraction } from '../structures
  * @example
  * ```typescript
  * [SlashCommandBuilder]() {
- *    return new SlashCommandBuilder().setName(this.name).setDescription('Examples are hard, ok?');
+ *    return new SlashCommand().setName(this.name).setDescription('Examples are hard, ok?');
  * }
  * ```
  *
@@ -34,7 +34,7 @@ export const SlashCommandBuilder = Symbol('SlashCommands.Builder');
  * @example
  * ```typescript
  * [SlashCommandBuilder]() {
- *    return new SlashCommandBuilder().setName(this.name).setDescription('Examples are hard, ok?');
+ *    return new SlashCommand().setName(this.name).setDescription('Examples are hard, ok?');
  * }
  * ```
  *
@@ -53,7 +53,7 @@ export interface ISlashCommandBuilder {
 }
 
 /**
- * Represents the function that is called when a slash command should be limited to some guild IDs
+ * Represents the function that is called when a slash command should be limited to some guild ids
  *
  * @example
  * ```typescript
