@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { Awaited, Command, PreconditionContainerReturn, PreconditionContext, Result, UserError } from '@sapphire/framework';
 import type { SlashCommandInteraction } from '../interactions/SlashCommandInteraction';
 declare module '@sapphire/framework' {
