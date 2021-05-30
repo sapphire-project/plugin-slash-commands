@@ -1086,6 +1086,11 @@
         "signature": "bd5e47f2a261ad096c45ebbe667d1ba8c6e59cfc9df7edf7e014adc67ed79a15",
         "affectsGlobalScope": false
       },
+      "../src/lib/structures/extensions/SlashCommandPreconditionContainerExtensions.ts": {
+        "version": "97a9114f1b0d670785ecf0bb4d9c2547625d517cc3b69f7ebf9518431d41a78a",
+        "signature": "bf8b8726f992e6ef1fb6e2aceeb1e0c2d97064803f2cc5c51ade85db58e15971",
+        "affectsGlobalScope": false
+      },
       "../src/lib/utils/Events.ts": {
         "version": "a405bc4877efa82903a97df76da3eb4d88861990d97644e09064e9551479e30d",
         "signature": "3f32139cb85a36689ca512f2fae409cb8719a6a420be1c37e2d7237208d45566",
@@ -1097,18 +1102,13 @@
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "6a9143872428fb809a372ecf9054cfb0540b444cab30b0e4d819930fecc8a536",
-        "signature": "10ca85b93cdaca5d2dee8ccb98a9ebac121f3d44b2df1c9f3a18f7e504bd574f",
-        "affectsGlobalScope": false
-      },
-      "../src/lib/structures/extensions/SlashCommandPreconditionContainerExtensions.ts": {
-        "version": "97a9114f1b0d670785ecf0bb4d9c2547625d517cc3b69f7ebf9518431d41a78a",
-        "signature": "bf8b8726f992e6ef1fb6e2aceeb1e0c2d97064803f2cc5c51ade85db58e15971",
+        "version": "c4b79dea4b754dfb8b9aee974f7152621bfa8ca2a2b914dd14c89ccbd8cfe226",
+        "signature": "8bdd1e5c2ae6de6fd773c73ebd966abf56a1e26cc02d250daee4eb458962b17a",
         "affectsGlobalScope": false
       },
       "../src/register-discordjs.ts": {
-        "version": "d36891cf8142b6f972a5ff13ef5647aa1a0566702df835ccbe47d0dbfb6a4d8d",
-        "signature": "d9b7a61d024f072e0dda8234ae6a370fc7f791f3d7fb5909c84404d102291b21",
+        "version": "4e53b5a313f70b0547c6dd907f366426893a391730e49404c3c72af85c30d277",
+        "signature": "2e6ae6165cb7208161e96597f3d00d367940f5988b84e76ce96a59aa4e017848",
         "affectsGlobalScope": false
       },
       "../src/events/SlashCommandRawInteractionCreate.ts": {
@@ -1967,6 +1967,7 @@
         "../src/lib/structures/builders/SlashCommandBuilder.ts",
         "../src/lib/structures/builders/SlashCommandOptions.ts",
         "../src/lib/structures/builders/SlashCommandSubCommands.ts",
+        "../src/lib/structures/extensions/SlashCommandPreconditionContainerExtensions.ts",
         "../src/lib/structures/extensions/SlashCommandPreconditionStore.ts",
         "../src/lib/utils/Events.ts",
         "../src/lib/utils/Symbols.ts"
@@ -2044,8 +2045,7 @@
         "../node_modules/@sapphire/framework/dist/index.d.ts",
         "../node_modules/@types/node/path.d.ts",
         "../node_modules/tslib/tslib.d.ts",
-        "../src/index.ts",
-        "../src/lib/structures/extensions/SlashCommandPreconditionContainerExtensions.ts"
+        "../src/index.ts"
       ]
     },
     "exportedModulesMap": {
@@ -2720,6 +2720,7 @@
         "../src/lib/structures/builders/SlashCommandBuilder.ts",
         "../src/lib/structures/builders/SlashCommandOptions.ts",
         "../src/lib/structures/builders/SlashCommandSubCommands.ts",
+        "../src/lib/structures/extensions/SlashCommandPreconditionContainerExtensions.ts",
         "../src/lib/structures/extensions/SlashCommandPreconditionStore.ts",
         "../src/lib/utils/Events.ts",
         "../src/lib/utils/Symbols.ts"
@@ -2776,8 +2777,7 @@
         "../src/lib/structures/interactions/SlashCommandInteraction.ts"
       ],
       "../src/register-discordjs.ts": [
-        "../node_modules/@sapphire/framework/dist/index.d.ts",
-        "../src/lib/structures/extensions/SlashCommandPreconditionContainerExtensions.ts"
+        "../node_modules/@sapphire/framework/dist/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [

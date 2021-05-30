@@ -1,4 +1,3 @@
-import './lib/structures/extensions/SlashCommandPreconditionContainerExtensions';
 import { Plugin, postInitialization, SapphireClient } from '@sapphire/framework';
 /**
  * @since 1.0.0

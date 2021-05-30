@@ -1,3 +1,4 @@
+import './lib/structures/extensions/SlashCommandPreconditionContainerExtensions';
 export * from './lib/utils/Symbols';
 export * from './lib/utils/Events';
 export * from './lib/structures/builders/SlashCommandBuilder';

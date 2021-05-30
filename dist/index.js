@@ -2,6 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SlashCommandAssertions = exports.SlashCommandStringOption = exports.SlashCommandIntegerOption = exports.SlashCommandOptionBase = void 0;
 const tslib_1 = require("tslib");
+// Import extensions
+require("./lib/structures/extensions/SlashCommandPreconditionContainerExtensions");
 // Export all symbols
 tslib_1.__exportStar(require("./lib/utils/Symbols"), exports);
 // Export events

@@ -1,8 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SlashCommandPlugin = void 0;
-// Import extensions
-require("./lib/structures/extensions/SlashCommandPreconditionContainerExtensions");
 const framework_1 = require("@sapphire/framework");
 const path_1 = require("path");
 const index_1 = require("./index");
