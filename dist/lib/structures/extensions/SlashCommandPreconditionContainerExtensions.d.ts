@@ -1,6 +1,6 @@
 /// <reference types="node" />
 import { Awaited, Command, PreconditionContainerReturn, PreconditionContext, Result, UserError } from '@sapphire/framework';
-import type { SlashCommandInteraction } from '../interactions/SlashCommandInteraction';
+import type { SlashCommandInteraction } from '../interactions/commands/SlashCommandInteraction';
 declare module '@sapphire/framework' {
     interface PreconditionContainerArray {
         slashCommandRun(interaction: SlashCommandInteraction, command: Command, context?: PreconditionContext): PreconditionContainerReturn;

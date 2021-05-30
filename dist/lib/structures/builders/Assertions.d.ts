@@ -1,5 +1,5 @@
 import type { APIApplicationCommandOptionChoice } from 'discord-api-types/v8';
-import type { ToJSON } from './SlashCommandBuilder';
+import type { ToJSON } from './SlashCommand';
 export declare function validateRequiredParameters(name: string, description: string, options: ToJSON[]): void;
 export declare function validateName(name: string): void;
 export declare function validateDescription(description: string): void;

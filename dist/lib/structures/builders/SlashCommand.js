@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SlashCommandBuilder = void 0;
+exports.SlashCommand = void 0;
 const tslib_1 = require("tslib");
 const ts_mixer_1 = require("ts-mixer");
 const Assertions_1 = require("./Assertions");
 const SlashCommandOptions_1 = require("./SlashCommandOptions");
 const SlashCommandSubCommands_1 = require("./SlashCommandSubCommands");
-let SlashCommandBuilder = class SlashCommandBuilder {
+let SlashCommand = class SlashCommand {
     constructor() {
         Object.defineProperty(this, "name", {
             enumerable: true,
@@ -84,8 +84,8 @@ let SlashCommandBuilder = class SlashCommandBuilder {
         return this;
     }
 };
-SlashCommandBuilder = tslib_1.__decorate([
+SlashCommand = tslib_1.__decorate([
     ts_mixer_1.mix(SlashCommandOptions_1.Shared__Options, SlashCommandOptions_1.Shared__NameAndDescription)
-], SlashCommandBuilder);
-exports.SlashCommandBuilder = SlashCommandBuilder;
-//# sourceMappingURL=SlashCommandBuilder.js.map
+], SlashCommand);
+exports.SlashCommand = SlashCommand;
+//# sourceMappingURL=SlashCommand.js.map

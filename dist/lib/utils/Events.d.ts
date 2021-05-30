@@ -1,6 +1,6 @@
 import type { Command } from '@sapphire/framework';
 import type { APIInteraction } from 'discord-api-types/v8';
-import type { SlashCommandInteraction } from '../structures/interactions/SlashCommandInteraction';
+import type { SlashCommandInteraction } from '../structures/interactions/commands/SlashCommandInteraction';
 export declare const enum SlashCommandEvents {
     PreSlashCommandRun = "preSlashCommandRun",
     SlashCommandDenied = "slashCommandDenied",

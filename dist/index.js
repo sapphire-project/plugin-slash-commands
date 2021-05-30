@@ -9,7 +9,7 @@ tslib_1.__exportStar(require("./lib/utils/Symbols"), exports);
 // Export events
 tslib_1.__exportStar(require("./lib/utils/Events"), exports);
 // Export all structures
-tslib_1.__exportStar(require("./lib/structures/builders/SlashCommandBuilder"), exports);
+tslib_1.__exportStar(require("./lib/structures/builders/SlashCommand"), exports);
 tslib_1.__exportStar(require("./lib/structures/builders/SlashCommandSubCommands"), exports);
 var SlashCommandOptions_1 = require("./lib/structures/builders/SlashCommandOptions");
 Object.defineProperty(exports, "SlashCommandOptionBase", { enumerable: true, get: function () { return SlashCommandOptions_1.SlashCommandOptionBase; } });

@@ -8,7 +8,7 @@ function extendPreconditionStore(store) {
     class SlashCommandPreconditionStore extends originalConstructor {
         async slashCommandRun(interaction, command, context = {}) {
             for (const precondition of this['globalPreconditions']) {
-                const slashCommandHandler = Reflect.get(precondition, Symbols_1.SlashCommandPreconditionRunFunction);
+                const slashCommandHandler = Reflect.get(precondition, Symbols_1.SlashCommandPreconditionRun);
                 if (!slashCommandHandler) {
                     throw new TypeError(`The precondition "${precondition.name}" does not have a slash command handler! Did you forget to add one via the "SlashCommandPreconditionRunFunction" symbol?`);
                 }

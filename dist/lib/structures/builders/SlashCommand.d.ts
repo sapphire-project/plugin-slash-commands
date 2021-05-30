@@ -1,7 +1,7 @@
 import type { APIApplicationCommandOption } from 'discord-api-types/v8';
 import { Shared__NameAndDescription, Shared__Options } from './SlashCommandOptions';
 import { SlashCommandSubCommandBuilder, SlashCommandSubCommandGroupBuilder } from './SlashCommandSubCommands';
-export declare class SlashCommandBuilder {
+export declare class SlashCommand {
     protected name: string;
     protected description: string;
     protected options: ToJSON[];
@@ -27,9 +27,9 @@ export declare class SlashCommandBuilder {
      */
     addSubCommand(input: SlashCommandSubCommandBuilder | ((subCommandGroup: SlashCommandSubCommandBuilder) => SlashCommandSubCommandBuilder)): this;
 }
-export interface SlashCommandBuilder extends Shared__NameAndDescription, Shared__Options {
+export interface SlashCommand extends Shared__NameAndDescription, Shared__Options {
 }
 export interface ToJSON {
     toJSON(): APIApplicationCommandOption;
 }
-//# sourceMappingURL=SlashCommandBuilder.d.ts.map
+//# sourceMappingURL=SlashCommand.d.ts.map

@@ -1,5 +1,5 @@
 import { APIApplicationCommandOptionChoice, ApplicationCommandOptionType } from 'discord-api-types/v8';
-import type { ToJSON } from './SlashCommandBuilder';
+import type { ToJSON } from './SlashCommand';
 export declare class Shared__Options {
     protected options: ToJSON[];
     /**

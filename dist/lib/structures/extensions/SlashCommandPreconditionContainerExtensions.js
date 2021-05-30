@@ -15,7 +15,7 @@ framework_1.PreconditionContainerArray.prototype.slashCommandRun = function slas
 framework_1.PreconditionContainerSingle.prototype.slashCommandRun = function slashCommandRun(interaction, command, context = {}) {
     const precondition = framework_1.Store.injectedContext.stores.get('preconditions').get(this.name);
     if (precondition) {
-        const slashCommandHandler = Reflect.get(precondition, Symbols_1.SlashCommandPreconditionRunFunction);
+        const slashCommandHandler = Reflect.get(precondition, Symbols_1.SlashCommandPreconditionRun);
         if (!slashCommandHandler) {
             throw new TypeError(`The precondition "${this.name}" does not have a slash command handler! Did you forget to add one via the "SlashCommandPreconditionRunFunction" symbol?`);
         }
@@ -24,8 +24,7 @@ framework_1.PreconditionContainerSingle.prototype.slashCommandRun = function sla
     throw new Error(`The precondition "${this.name}" is not available.`);
 };
 // Extend the `PreconditionRunCondition` conditions to support slash commands
-// eslint-disable-next-line prefer-destructuring, @typescript-eslint/dot-notation
-const conditions = framework_1.PreconditionContainerArray['conditions'];
+const { conditions } = framework_1.PreconditionContainerArray;
 // Extend `And` condition
 const originalAnd = conditions.get(framework_1.PreconditionRunCondition.And);
 conditions.set(framework_1.PreconditionRunCondition.And, {

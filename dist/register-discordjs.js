@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SlashCommandPlugin = void 0;
+exports.InteractionsPlugin = void 0;
 const framework_1 = require("@sapphire/framework");
 const path_1 = require("path");
 const index_1 = require("./index");
 /**
  * @since 1.0.0
  */
-class SlashCommandPlugin extends framework_1.Plugin {
+class InteractionsPlugin extends framework_1.Plugin {
     static [framework_1.postInitialization]() {
         // Register our own events
         this.stores.get('events').registerPath(path_1.join(__dirname, 'events'));
@@ -19,6 +19,6 @@ class SlashCommandPlugin extends framework_1.Plugin {
         this.stores.register(extendedStore);
     }
 }
-exports.SlashCommandPlugin = SlashCommandPlugin;
-framework_1.SapphireClient.plugins.registerPostInitializationHook(SlashCommandPlugin[framework_1.postInitialization], 'SlashCommands.PostInitialization');
+exports.InteractionsPlugin = InteractionsPlugin;
+framework_1.SapphireClient.plugins.registerPostInitializationHook(InteractionsPlugin[framework_1.postInitialization], 'Interactions.PostInitialization');
 //# sourceMappingURL=register-discordjs.js.map
