@@ -1,7 +1,7 @@
 {
 	"name": "@sapphire/interactions",
 	"version": "1.0.0-alpha.0",
-	"description": "Simple plugin for adding Slash Command support in your existing bot",
+	"description": "Simple plugin for adding Discord interactions support in your bot",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
@@ -74,10 +74,6 @@
 		"typedoc": "^0.20.36",
 		"typedoc-plugin-nojekyll": "^1.0.1",
 		"typescript": "^4.3.2"
-	},
-	"peerDependencies": {
-		"@sapphire/framework": "^1.x",
-		"discord.js": "^12.x"
 	},
 	"repository": {
 		"type": "git",
