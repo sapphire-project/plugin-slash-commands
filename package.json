@@ -29,8 +29,8 @@
 		"format": "prettier --write {src,tests}/**/*.ts",
 		"lint": "eslint src tests --ext ts --fix",
 		"postbuild": "run-p esm:*",
-		"postinstall": "husky install .github/husky",
 		"postpublish": "pinst --enable",
+		"prepare": "husky install .github/husky",
 		"prepublishOnly": "yarn build && pinst --disable",
 		"sversion": "standard-version",
 		"test:watch": "jest --watch",
@@ -81,7 +81,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/sapphire/interactions.git"
+		"url": "git+https://github.com/sapphiredev/interactions.git"
 	},
 	"files": [
 		"dist",
@@ -101,7 +101,7 @@
 		"discordjs"
 	],
 	"bugs": {
-		"url": "https://github.com/sapphire/interactions/issues"
+		"url": "https://github.com/sapphiredev/interactions/issues"
 	},
 	"homepage": "https://sapphiredev.github.io/interactions",
 	"commitlint": {

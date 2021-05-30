@@ -6,7 +6,7 @@
 
 **Simple plugin for adding Slash Command support in your existing bot.**
 
-[![GitHub](https://img.shields.io/github/license/sapphire/interactions)](https://github.com/sapphire/interactions/blob/main/LICENSE.md)
+[![GitHub](https://img.shields.io/github/license/sapphiredev/interactions)](https://github.com/sapphiredev/interactions/blob/main/LICENSE.md)
 [![codecov](https://codecov.io/gh/sapphiredev/interactions/branch/main/graph/badge.svg?token=pAvXhtqMu8)](https://codecov.io/gh/sapphiredev/interactions)
 [![npm](https://img.shields.io/npm/v/@sapphire/interactions?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@sapphire/interactions)
 [![Depfu](https://badges.depfu.com/badges/b7a32a808429b51ac55624f31f8a698d/overview.svg)](https://depfu.com/github/sapphiredev/interactions?project_id=23003)
