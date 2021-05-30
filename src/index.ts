@@ -1,3 +1,6 @@
+// Import extensions
+import './lib/structures/extensions/SlashCommandPreconditionContainerExtensions';
+
 // Export all symbols
 export * from './lib/utils/Symbols';
 // Export events

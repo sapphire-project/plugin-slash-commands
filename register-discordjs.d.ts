@@ -1,1 +1,1 @@
-export * from './dist/register-discord.js';
+export * from './dist/register-discordjs.js';

@@ -1,6 +1,3 @@
-// Import extensions
-import './lib/structures/extensions/SlashCommandPreconditionContainerExtensions';
-
 import { Plugin, postInitialization, SapphireClient } from '@sapphire/framework';
 import { join } from 'path';
 import { extendPreconditionStore } from './index';
