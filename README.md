@@ -2,13 +2,13 @@
 
 <!-- ![Sapphire Logo](https://cdn.skyra.pw/gh-assets/sapphire.png) -->
 
-# @sapphire/interactions
+# @sapphire/plugin-interactions
 
 **Simple plugin for adding Slash Command support in your existing bot.**
 
 [![GitHub](https://img.shields.io/github/license/sapphiredev/interactions)](https://github.com/sapphiredev/interactions/blob/main/LICENSE.md)
 [![codecov](https://codecov.io/gh/sapphiredev/interactions/branch/main/graph/badge.svg?token=pAvXhtqMu8)](https://codecov.io/gh/sapphiredev/interactions)
-[![npm](https://img.shields.io/npm/v/@sapphire/interactions?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@sapphire/interactions)
+[![npm](https://img.shields.io/npm/v/@sapphire/plugin-interactions?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@sapphire/plugin-interactions)
 [![Depfu](https://badges.depfu.com/badges/b7a32a808429b51ac55624f31f8a698d/overview.svg)](https://depfu.com/github/sapphiredev/interactions?project_id=23003)
 
 </div>
@@ -22,8 +22,10 @@
 
 ## Installation
 
+You can use the following command to install this package, or replace `npm install` with your package manager of choice.
+
 ```bash
-yarn add -D @sapphire/interactions
+npm install @sapphire/plugin-interactions
 ```
 
 ## Usage
@@ -33,7 +35,7 @@ _First, register the plugin_
 > Note that at this time, we only support discord.js directly! You may use the classes directly if you want to.
 
 ```typescript
-import '@sapphire/interactions/register-discordjs';
+import '@sapphire/plugin-interactions/register-discordjs';
 ```
 
 _Usage with TypeScript_
@@ -45,7 +47,7 @@ import {
 	SlashCommandRunFunction,
 	SlashCommandInteraction,
 	SlashCommandArgs
-} from '@sapphire/interactions';
+} from '@sapphire/plugin-interactions';
 import { Args, Command } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 
@@ -67,7 +69,7 @@ export class UserCommand extends Command {
 _Usage with JavaScript_
 
 ```javascript
-const { SlashCommandBuilderFunction, SlashCommandBuilder, SlashCommandRunFunction } = require('@sapphire/interactions');
+const { SlashCommandBuilderFunction, SlashCommandBuilder, SlashCommandRunFunction } = require('@sapphire/plugin-interactions');
 const { Args, Command } = require('@sapphire/framework');
 
 exports.UserCommand = class extends Command {
