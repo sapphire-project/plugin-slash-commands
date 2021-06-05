@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SlashCommandSubCommandBuilder | @sapphire/interactions</title>
+	<title>SlashCommand | @sapphire/interactions</title>
 	<meta name="description" content="Documentation for @sapphire/interactions">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,44 +53,30 @@
 					<a href="../modules.html">@sapphire/interactions</a>
 				</li>
 				<li>
-					<a href="slashcommandsubcommandbuilder.html">SlashCommandSubCommandBuilder</a>
+					<a href="slashcommand.html">SlashCommand</a>
 				</li>
 			</ul>
-			<h1>Class SlashCommandSubCommandBuilder</h1>
+			<h1>Class SlashCommand</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Represents a sub command</p>
-					</div>
-					<p>For more information, go to <a href="https://discord.com/developers/docs/interactions/slash-commands#subcommands-and-subcommand-groups">https://discord.com/developers/docs/interactions/slash-commands#subcommands-and-subcommand-groups</a></p>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">Shared__Options</span>
+						<span class="tsd-signature-type">Shared__NameAndDescription</span>
 					</li>
 					<li>
-						<span class="tsd-signature-type">Shared__NameAndDescription</span>
+						<span class="tsd-signature-type">Shared__Options</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">SlashCommandSubCommandBuilder</span>
+								<span class="target">SlashCommand</span>
 							</li>
 						</ul>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/tojson.html" class="tsd-signature-type" data-tsd-kind="Interface">ToJSON</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -100,29 +86,31 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="slashcommandsubcommandbuilder.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="slashcommand.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="slashcommandsubcommandbuilder.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="slashcommandsubcommandbuilder.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="slashcommandsubcommandbuilder.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="slashcommand.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="slashcommand.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="slashcommand.html#options" class="tsd-kind-icon">options</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommandsubcommandbuilder.html#addbooleanoption" class="tsd-kind-icon">add<wbr>Boolean<wbr>Option</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommandsubcommandbuilder.html#addchanneloption" class="tsd-kind-icon">add<wbr>Channel<wbr>Option</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommandsubcommandbuilder.html#addintegeroption" class="tsd-kind-icon">add<wbr>Integer<wbr>Option</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommandsubcommandbuilder.html#addroleoption" class="tsd-kind-icon">add<wbr>Role<wbr>Option</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommandsubcommandbuilder.html#addstringoption" class="tsd-kind-icon">add<wbr>String<wbr>Option</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommandsubcommandbuilder.html#adduseroption" class="tsd-kind-icon">add<wbr>User<wbr>Option</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommandsubcommandbuilder.html#setdescription" class="tsd-kind-icon">set<wbr>Description</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommandsubcommandbuilder.html#setname" class="tsd-kind-icon">set<wbr>Name</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommandsubcommandbuilder.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommand.html#addbooleanoption" class="tsd-kind-icon">add<wbr>Boolean<wbr>Option</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommand.html#addchanneloption" class="tsd-kind-icon">add<wbr>Channel<wbr>Option</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommand.html#addintegeroption" class="tsd-kind-icon">add<wbr>Integer<wbr>Option</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommand.html#addroleoption" class="tsd-kind-icon">add<wbr>Role<wbr>Option</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommand.html#addstringoption" class="tsd-kind-icon">add<wbr>String<wbr>Option</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommand.html#addsubcommand" class="tsd-kind-icon">add<wbr>Sub<wbr>Command</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommand.html#addsubcommandgroup" class="tsd-kind-icon">add<wbr>Sub<wbr>Command<wbr>Group</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommand.html#adduseroption" class="tsd-kind-icon">add<wbr>User<wbr>Option</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommand.html#setdescription" class="tsd-kind-icon">set<wbr>Description</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommand.html#setname" class="tsd-kind-icon">set<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="slashcommand.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 							</ul>
 						</section>
 					</div>
@@ -134,13 +122,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Slash<wbr>Command<wbr>Sub<wbr>Command<wbr>Builder<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Slash<wbr>Command<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -153,7 +141,7 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/b419f83/src/lib/structures/builders/SlashCommandSubCommands.ts#L54">lib/structures/builders/SlashCommandSubCommands.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/b419f83/src/lib/structures/builders/SlashCommand.ts#L11">lib/structures/builders/SlashCommand.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -163,7 +151,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/b419f83/src/lib/structures/builders/SlashCommandSubCommands.ts#L52">lib/structures/builders/SlashCommandSubCommands.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/b419f83/src/lib/structures/builders/SlashCommand.ts#L9">lib/structures/builders/SlashCommand.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -173,7 +161,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/tojson.html" class="tsd-signature-type" data-tsd-kind="Interface">ToJSON</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/b419f83/src/lib/structures/builders/SlashCommandSubCommands.ts#L55">lib/structures/builders/SlashCommandSubCommands.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/b419f83/src/lib/structures/builders/SlashCommand.ts#L12">lib/structures/builders/SlashCommand.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -184,7 +172,7 @@
 					<a name="addbooleanoption" class="tsd-anchor"></a>
 					<h3>add<wbr>Boolean<wbr>Option</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Boolean<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Boolean<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -207,7 +195,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -215,7 +203,7 @@
 					<a name="addchanneloption" class="tsd-anchor"></a>
 					<h3>add<wbr>Channel<wbr>Option</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Channel<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Channel<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -238,7 +226,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -246,7 +234,7 @@
 					<a name="addintegeroption" class="tsd-anchor"></a>
 					<h3>add<wbr>Integer<wbr>Option</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Integer<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandintegeroption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandIntegerOption</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandintegeroption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandIntegerOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandintegeroption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandIntegerOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Integer<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandintegeroption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandIntegerOption</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandintegeroption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandIntegerOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandintegeroption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandIntegerOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -261,7 +249,7 @@
 									<h5>input: <a href="slashcommandintegeroption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandIntegerOption</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandintegeroption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandIntegerOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandintegeroption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandIntegerOption</a><span class="tsd-signature-symbol">)</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -269,7 +257,7 @@
 					<a name="addroleoption" class="tsd-anchor"></a>
 					<h3>add<wbr>Role<wbr>Option</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Role<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Role<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -292,7 +280,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -300,7 +288,7 @@
 					<a name="addstringoption" class="tsd-anchor"></a>
 					<h3>add<wbr>String<wbr>Option</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>String<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandstringoption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandStringOption</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandstringoption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandStringOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandstringoption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandStringOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>String<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandstringoption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandStringOption</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandstringoption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandStringOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandstringoption.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandStringOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -323,7 +311,69 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addsubcommand" class="tsd-anchor"></a>
+					<h3>add<wbr>Sub<wbr>Command</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Sub<wbr>Command<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subCommandGroup<span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/b419f83/src/lib/structures/builders/SlashCommand.ts#L63">lib/structures/builders/SlashCommand.ts:63</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds a new sub command to this command</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subCommandGroup<span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a><span class="tsd-signature-symbol">)</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A function that returns a sub command builder, or an already built builder</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addsubcommandgroup" class="tsd-anchor"></a>
+					<h3>add<wbr>Sub<wbr>Command<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Sub<wbr>Command<wbr>Group<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandgroupbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandGroupBuilder</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subCommandGroup<span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandgroupbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandGroupBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandsubcommandgroupbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandGroupBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/b419f83/src/lib/structures/builders/SlashCommand.ts#L35">lib/structures/builders/SlashCommand.ts:35</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds a new sub command group to this command</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <a href="slashcommandsubcommandgroupbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandGroupBuilder</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>subCommandGroup<span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandgroupbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandGroupBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandsubcommandgroupbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandGroupBuilder</a><span class="tsd-signature-symbol">)</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A function that returns a sub command group builder, or an already built builder</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -331,7 +381,7 @@
 					<a name="adduseroption" class="tsd-anchor"></a>
 					<h3>add<wbr>User<wbr>Option</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>User<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>User<wbr>Option<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="slashcommandoptionbase.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandOptionBase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -354,7 +404,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -362,7 +412,7 @@
 					<a name="setdescription" class="tsd-anchor"></a>
 					<h3>set<wbr>Description</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Description<span class="tsd-signature-symbol">(</span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Description<span class="tsd-signature-symbol">(</span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -385,7 +435,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -393,7 +443,7 @@
 					<a name="setname" class="tsd-anchor"></a>
 					<h3>set<wbr>Name</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Name<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Name<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -416,7 +466,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="slashcommandsubcommandbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommandSubCommandBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="slashcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SlashCommand</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -424,17 +474,23 @@
 					<a name="tojson" class="tsd-anchor"></a>
 					<h3>toJSON</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIApplicationCommandOption</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ApplicationCommandOptionType</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIApplicationCommandOption</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/tojson.html">ToJSON</a>.<a href="../interfaces/tojson.html#tojson-1">toJSON</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/b419f83/src/lib/structures/builders/SlashCommandSubCommands.ts#L57">lib/structures/builders/SlashCommandSubCommands.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/b419f83/src/lib/structures/builders/SlashCommand.ts#L20">lib/structures/builders/SlashCommand.ts:20</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIApplicationCommandOption</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ApplicationCommandOptionType</span><span class="tsd-signature-symbol"> }</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the final data that should be sent to Discord. You won&#39;t need this unless you&#39;re manually
+									creating slash commands via this builder.</p>
+								</div>
+								<p><strong>Note:</strong> Calling this getter will validate required properties based on their conditions.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIApplicationCommandOption</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
 									<h5>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
@@ -444,9 +500,6 @@
 								</li>
 								<li class="tsd-parameter">
 									<h5>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIApplicationCommandOption</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ApplicationCommandOptionType</span></h5>
 								</li>
 							</ul>
 						</li>
@@ -467,9 +520,60 @@
 					<li class=" tsd-kind-enum">
 						<a href="../enums/slashcommandevents.html" class="tsd-kind-icon">Slash<wbr>Command<wbr>Events</a>
 					</li>
-					<li class=" tsd-kind-class">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
 						<a href="slashcommand.html" class="tsd-kind-icon">Slash<wbr>Command</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="slashcommand.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="slashcommand.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="slashcommand.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="slashcommand.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="slashcommand.html#addbooleanoption" class="tsd-kind-icon">add<wbr>Boolean<wbr>Option</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="slashcommand.html#addchanneloption" class="tsd-kind-icon">add<wbr>Channel<wbr>Option</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="slashcommand.html#addintegeroption" class="tsd-kind-icon">add<wbr>Integer<wbr>Option</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="slashcommand.html#addroleoption" class="tsd-kind-icon">add<wbr>Role<wbr>Option</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="slashcommand.html#addstringoption" class="tsd-kind-icon">add<wbr>String<wbr>Option</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="slashcommand.html#addsubcommand" class="tsd-kind-icon">add<wbr>Sub<wbr>Command</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="slashcommand.html#addsubcommandgroup" class="tsd-kind-icon">add<wbr>Sub<wbr>Command<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="slashcommand.html#adduseroption" class="tsd-kind-icon">add<wbr>User<wbr>Option</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="slashcommand.html#setdescription" class="tsd-kind-icon">set<wbr>Description</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="slashcommand.html#setname" class="tsd-kind-icon">set<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="slashcommand.html#tojson" class="tsd-kind-icon">toJSON</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-class">
 						<a href="slashcommandintegeroption.html" class="tsd-kind-icon">Slash<wbr>Command<wbr>Integer<wbr>Option</a>
 					</li>
@@ -479,54 +583,9 @@
 					<li class=" tsd-kind-class">
 						<a href="slashcommandstringoption.html" class="tsd-kind-icon">Slash<wbr>Command<wbr>String<wbr>Option</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class">
+					<li class=" tsd-kind-class">
 						<a href="slashcommandsubcommandbuilder.html" class="tsd-kind-icon">Slash<wbr>Command<wbr>Sub<wbr>Command<wbr>Builder</a>
-						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="slashcommandsubcommandbuilder.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="slashcommandsubcommandbuilder.html#description" class="tsd-kind-icon">description</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="slashcommandsubcommandbuilder.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="slashcommandsubcommandbuilder.html#options" class="tsd-kind-icon">options</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="slashcommandsubcommandbuilder.html#addbooleanoption" class="tsd-kind-icon">add<wbr>Boolean<wbr>Option</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="slashcommandsubcommandbuilder.html#addchanneloption" class="tsd-kind-icon">add<wbr>Channel<wbr>Option</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="slashcommandsubcommandbuilder.html#addintegeroption" class="tsd-kind-icon">add<wbr>Integer<wbr>Option</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="slashcommandsubcommandbuilder.html#addroleoption" class="tsd-kind-icon">add<wbr>Role<wbr>Option</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="slashcommandsubcommandbuilder.html#addstringoption" class="tsd-kind-icon">add<wbr>String<wbr>Option</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="slashcommandsubcommandbuilder.html#adduseroption" class="tsd-kind-icon">add<wbr>User<wbr>Option</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="slashcommandsubcommandbuilder.html#setdescription" class="tsd-kind-icon">set<wbr>Description</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="slashcommandsubcommandbuilder.html#setname" class="tsd-kind-icon">set<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="slashcommandsubcommandbuilder.html#tojson" class="tsd-kind-icon">toJSON</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-class">
 						<a href="slashcommandsubcommandgroupbuilder.html" class="tsd-kind-icon">Slash<wbr>Command<wbr>Sub<wbr>Command<wbr>Group<wbr>Builder</a>
 					</li>

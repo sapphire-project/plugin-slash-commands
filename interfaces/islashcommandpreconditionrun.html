@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ISlashCommandGuildOnlyFunction | @sapphire/interactions</title>
+	<title>ISlashCommandPreconditionRun | @sapphire/interactions</title>
 	<meta name="description" content="Documentation for @sapphire/interactions">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,10 +53,10 @@
 					<a href="../modules.html">@sapphire/interactions</a>
 				</li>
 				<li>
-					<a href="islashcommandguildonlyfunction.html">ISlashCommandGuildOnlyFunction</a>
+					<a href="islashcommandpreconditionrun.html">ISlashCommandPreconditionRun</a>
 				</li>
 			</ul>
-			<h1>Interface ISlashCommandGuildOnlyFunction</h1>
+			<h1>Interface ISlashCommandPreconditionRun</h1>
 		</div>
 	</div>
 </header>
@@ -66,12 +66,12 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Represents the function that is called when a slash command should be limited to some guild ids</p>
+						<p>Represents the function that is called in a precondition when a slash command interaction is received</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>example</dt>
-						<dd><pre><code class="language-typescript"><span style="color: #000000">[</span><span style="color: #001080">SlashCommandGuildOnlyFunction</span><span style="color: #000000">]() {</span>
-<span style="color: #000000">   </span><span style="color: #AF00DB">return</span><span style="color: #000000"> [</span><span style="color: #A31515">&#039;737141877803057244&#039;</span><span style="color: #000000">];</span>
+						<dd><pre><code class="language-typescript"><span style="color: #000000">[</span><span style="color: #001080">SlashCommandPreconditionRun</span><span style="color: #000000">](</span><span style="color: #001080">interaction</span><span style="color: #000000">: </span><span style="color: #001080">SlashCommandInteraction</span><span style="color: #000000">, </span><span style="color: #001080">command</span><span style="color: #000000">: </span><span style="color: #001080">Command</span><span style="color: #000000">) {</span>
+<span style="color: #000000">   </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">interaction</span><span style="color: #000000">.</span><span style="color: #001080">author</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;139836912335716352&#039;</span><span style="color: #000000"> ? </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #795E26">ok</span><span style="color: #000000">() : </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #795E26">error</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;No&#039;</span><span style="color: #000000">);</span>
 <span style="color: #000000">}</span>
 </code></pre>
 						</dd>
@@ -82,28 +82,40 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ISlashCommandGuildOnlyFunction</span>
+						<span class="target">ISlashCommandPreconditionRun</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3 class="tsd-before-signature">Callable</h3>
 				<ul class="tsd-signatures tsd-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">ISlash<wbr>Command<wbr>Guild<wbr>Only<wbr>Function<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">ISlash<wbr>Command<wbr>Precondition<wbr>Run<span class="tsd-signature-symbol">(</span>interaction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SlashCommandInteraction</span>, command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Command</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Args</span><span class="tsd-signature-symbol">&gt;</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PreconditionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PreconditionResult</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/0172817/src/lib/utils/Symbols.ts#L77">lib/utils/Symbols.ts:77</a></li>
+								<li>Defined in <a href="https://github.com/sapphiredev/interactions/blob/b419f83/src/lib/utils/Symbols.ts#L157">lib/utils/Symbols.ts:157</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Represents the function that is called when a slash command should be limited to some guild ids</p>
+								<p>Represents the function that is called in a precondition when a slash command interaction is received</p>
 							</div>
 						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>interaction: <span class="tsd-signature-type">SlashCommandInteraction</span></h5>
+							</li>
+							<li>
+								<h5>command: <span class="tsd-signature-type">Command</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Args</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+							<li>
+								<h5>context: <span class="tsd-signature-type">PreconditionContext</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PreconditionResult</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -122,7 +134,7 @@
 						<a href="../enums/slashcommandevents.html" class="tsd-kind-icon">Slash<wbr>Command<wbr>Events</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/slashcommandbuilder.html" class="tsd-kind-icon">Slash<wbr>Command<wbr>Builder</a>
+						<a href="../classes/slashcommand.html" class="tsd-kind-icon">Slash<wbr>Command</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/slashcommandintegeroption.html" class="tsd-kind-icon">Slash<wbr>Command<wbr>Integer<wbr>Option</a>
@@ -140,23 +152,23 @@
 						<a href="../classes/slashcommandsubcommandgroupbuilder.html" class="tsd-kind-icon">Slash<wbr>Command<wbr>Sub<wbr>Command<wbr>Group<wbr>Builder</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="islashcommandbuilderfunction.html" class="tsd-kind-icon">ISlash<wbr>Command<wbr>Builder<wbr>Function</a>
+						<a href="islashcommandbuilder.html" class="tsd-kind-icon">ISlash<wbr>Command<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="islashcommandguildonly.html" class="tsd-kind-icon">ISlash<wbr>Command<wbr>Guild<wbr>Only</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="islashcommandpreparse.html" class="tsd-kind-icon">ISlash<wbr>Command<wbr>Pre<wbr>Parse</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="islashcommandguildonlyfunction.html" class="tsd-kind-icon">ISlash<wbr>Command<wbr>Guild<wbr>Only<wbr>Function</a>
+						<a href="islashcommandpreconditionrun.html" class="tsd-kind-icon">ISlash<wbr>Command<wbr>Precondition<wbr>Run</a>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface">
-						<a href="islashcommandpreparsefunction.html" class="tsd-kind-icon">ISlash<wbr>Command<wbr>Pre<wbr>Parse<wbr>Function</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="islashcommandpreconditionrunfunction.html" class="tsd-kind-icon">ISlash<wbr>Command<wbr>Precondition<wbr>Run<wbr>Function</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="islashcommandrunfunction.html" class="tsd-kind-icon">ISlash<wbr>Command<wbr>Run<wbr>Function</a>
+						<a href="islashcommandrun.html" class="tsd-kind-icon">ISlash<wbr>Command<wbr>Run</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="slashcommandprerunpayload.html" class="tsd-kind-icon">Slash<wbr>Command<wbr>Pre<wbr>Run<wbr>Payload</a>
@@ -165,19 +177,19 @@
 						<a href="tojson.html" class="tsd-kind-icon">ToJSON</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="../modules.html#slashcommandbuilderfunction" class="tsd-kind-icon">Slash<wbr>Command<wbr>Builder<wbr>Function</a>
+						<a href="../modules.html#slashcommandbuilder" class="tsd-kind-icon">Slash<wbr>Command<wbr>Builder</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="../modules.html#slashcommandguildonlyfunction" class="tsd-kind-icon">Slash<wbr>Command<wbr>Guild<wbr>Only<wbr>Function</a>
+						<a href="../modules.html#slashcommandguildonly" class="tsd-kind-icon">Slash<wbr>Command<wbr>Guild<wbr>Only</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="../modules.html#slashcommandpreparsefunction" class="tsd-kind-icon">Slash<wbr>Command<wbr>Pre<wbr>Parse<wbr>Function</a>
+						<a href="../modules.html#slashcommandpreparse" class="tsd-kind-icon">Slash<wbr>Command<wbr>Pre<wbr>Parse</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="../modules.html#slashcommandpreconditionrunfunction" class="tsd-kind-icon">Slash<wbr>Command<wbr>Precondition<wbr>Run<wbr>Function</a>
+						<a href="../modules.html#slashcommandpreconditionrun" class="tsd-kind-icon">Slash<wbr>Command<wbr>Precondition<wbr>Run</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="../modules.html#slashcommandrunfunction" class="tsd-kind-icon">Slash<wbr>Command<wbr>Run<wbr>Function</a>
+						<a href="../modules.html#slashcommandrun" class="tsd-kind-icon">Slash<wbr>Command<wbr>Run</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="../modules.html#extendpreconditionstore" class="tsd-kind-icon">extend<wbr>Precondition<wbr>Store</a>
