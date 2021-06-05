@@ -19,7 +19,7 @@ jobs:
 
       - name: Send Release Message
         id: crosspost_action
-        uses: kludge-cs/gitcord-release-changelogger@v2
+        uses: kludge-cs/gitcord-release-changelogger@v3.0.0
         with:
           discord-webhook: ${{ secrets.RELEASE_WEBHOOK }}
           release-body: ${{ github.event.release.body }}
