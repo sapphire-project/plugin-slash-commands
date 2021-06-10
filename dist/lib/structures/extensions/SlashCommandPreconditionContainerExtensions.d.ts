@@ -14,7 +14,7 @@ declare module '@sapphire/framework' {
     interface IPreconditionCondition {
         /**
          * Runs the containers one by one.
-         * @seealso [[PreconditionRunMode.sequential]]
+         * @seealso {@link PreconditionRunMode.sequential}
          * @since 1.0.0
          * @param interaction The interaction that ran this precondition.
          * @param command The command the interaction invoked.
@@ -23,7 +23,7 @@ declare module '@sapphire/framework' {
         slashCommandSequential(interaction: SlashCommandInteraction, command: Command, entries: readonly IPreconditionContainer[], context: PreconditionContext): PreconditionContainerReturn;
         /**
          * Runs all the containers using `Promise.all`, then checks the results once all tasks finished running.
-         * @seealso [[PreconditionRunMode.parallel]]
+         * @seealso {@link PreconditionRunMode.parallel}
          * @since 1.0.0
          * @param interaction The interaction that ran this precondition.
          * @param command The command the interaction invoked.
