@@ -14,5 +14,4 @@ export const SlashCommandRun = mod.SlashCommandRun;
 export const SlashCommandStringOption = mod.SlashCommandStringOption;
 export const SlashCommandSubCommandBuilder = mod.SlashCommandSubCommandBuilder;
 export const SlashCommandSubCommandGroupBuilder = mod.SlashCommandSubCommandGroupBuilder;
-export const __esModule = mod.__esModule;
 export const extendPreconditionStore = mod.extendPreconditionStore;
