@@ -1,6 +1,6 @@
 {
-	"name": "@sapphire/plugins-interactions",
-	"version": "1.0.0-alpha.0",
+	"name": "@sapphire/plugin-interactions",
+	"version": "1.0.0",
 	"description": "Simple plugin for adding Discord interactions support in your bot",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
